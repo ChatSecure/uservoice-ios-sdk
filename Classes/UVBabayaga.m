@@ -20,13 +20,7 @@
 @implementation UVBabayaga
 
 + (UVBabayaga *)instance {
-    static UVBabayaga *_instance;
-    @synchronized(self) {
-        if (!_instance) {
-            _instance = [UVBabayaga new];
-        }
-    }
-    return _instance;
+    return nil;
 }
 
 + (void)track:(NSString *)event props:(NSDictionary *)props {
